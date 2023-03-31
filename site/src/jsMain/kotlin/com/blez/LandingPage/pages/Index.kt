@@ -1,11 +1,25 @@
 package com.blez.LandingPage.pages
 
 import androidx.compose.runtime.*
+import com.blez.LandingPage.sections.MainBackground
+import com.blez.LandingPage.sections.MainSection
+import com.varabyte.kobweb.compose.foundation.layout.Arrangement
+import com.varabyte.kobweb.compose.foundation.layout.Column
+import com.varabyte.kobweb.compose.ui.Alignment
+import com.varabyte.kobweb.compose.ui.Modifier
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.core.Page
 
 @Page
 @Composable
 fun HomePage() {
-    // TODO: Add content here
-    println("Hello World!")
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        MainBackground()
+        MainSection()
+
+    }
 }
