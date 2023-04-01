@@ -15,20 +15,20 @@ enum class Sections(
     About(
         id = "about",
         title = "About me",
-        subtitle = "Why Hire Me?",
+        subtitle = "Yours Truly",
         path = "#about"
     ),
-    Service(
-        id = "service",
-        title = "Service",
+    Projects(
+        id = "projects",
+        title = "Projects",
         subtitle = "I'm Good at",
-        path = "#service"
+        path = "#projects"
     ),
-    Portfolio(
-        id = "portfolio",
-        title = "Portfolio",
-        subtitle = "My Work",
-        path = "#portfolio"
+    Skills(
+        id = "skills",
+        title = "Skills",
+        subtitle = "My Skills",
+        path = "#skills"
     ),
     Experience(
         id = "experience",

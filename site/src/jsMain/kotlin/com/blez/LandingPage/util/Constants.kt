@@ -2,7 +2,8 @@ package com.blez.LandingPage.util
 
 object Constants {
     const val SECTION_WIDTH = 1920
-    const val FONT_FAMILTY = "Roboto"
+    const val FONT_FAMILTY = "Poppins"
+    const val INTO_TEXT = "I am currently pursuing my graduation from GIET University, Gunupur, Odisha with a keen interest in Android. I love to enhance my knowledge in this field by doing various projects, taking online courses, and reading blogs."
 
 
     object Res {
