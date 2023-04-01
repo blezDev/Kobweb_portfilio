@@ -14,22 +14,23 @@ enum class Sections(
     ),
     About(
         id = "about",
-        title = "About me",
+        title = "About",
         subtitle = "Yours Truly",
         path = "#about"
-    ),
-    Projects(
-        id = "projects",
-        title = "Projects",
-        subtitle = "I'm Good at",
-        path = "#projects"
     ),
     Skills(
         id = "skills",
         title = "Skills",
-        subtitle = "My Skills",
+        subtitle = "I'm Good at",
         path = "#skills"
     ),
+    Projects(
+        id = "projects",
+        title = "Projects",
+        subtitle = "I'm Have Worked at",
+        path = "#projects"
+    ),
+
     Experience(
         id = "experience",
         title = "Experience",

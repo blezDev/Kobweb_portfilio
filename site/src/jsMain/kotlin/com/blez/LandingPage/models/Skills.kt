@@ -18,12 +18,12 @@ enum class Skills(val title: String, val percentage: CSSSizeValue<CSSUnit.percen
         title = "Java",
         percentage = 50.percent
     ),
-    XML(
-        title = "XML",
-        percentage = 55.percent
+    Problem_Solving(
+        title = "Problem Solving",
+        percentage = 90.percent
     ),
-    C(
-        title = "C",
-        percentage = 65.percent
+    Willingness_to_Learn_New_Skills_and_Improve(
+        title = "Willingness to Learn New Skills and Improve",
+        percentage = 100.percent
     )
 }

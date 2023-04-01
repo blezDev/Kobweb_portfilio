@@ -34,7 +34,7 @@ Column(modifier = modifier, horizontalAlignment = alignment) {
          .color(Theme.Primary.rgb)
          .toAttrs()
    ) {
-      Text(sections.title)
+      Text(if (sections.id ==Sections.About.id) "About Me" else sections.title)
    }
    P(
       attrs = Modifier

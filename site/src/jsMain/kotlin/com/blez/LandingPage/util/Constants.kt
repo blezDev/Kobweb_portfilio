@@ -4,6 +4,11 @@ object Constants {
     const val SECTION_WIDTH = 1920
     const val FONT_FAMILTY = "Poppins"
     const val INTO_TEXT = "I am currently pursuing my graduation from GIET University, Gunupur, Odisha with a keen interest in Android. I love to enhance my knowledge in this field by doing various projects, taking online courses, and reading blogs."
+    const val ABOUT_TEXT = "Name is M Saikrishna Pattnaik\n" +
+            "Aspiring Android Developer\n" +
+            "Student in GIET UNIVERSITY, Gunupur\n" +
+            "Your average Android Lead of GDSC GIETU\n" +
+            "Hobbies: Building Projects, Gaming, Reading"
 
 
     object Res {
@@ -25,7 +30,9 @@ object Constants {
         object Image {
             const val background = "background.svg"
             const val logo = "logo.svg"
+            const val about_image = "about_image.jpg"
             const val main = "main_image.png"
+            const val android_image = "android_image.png"
             const val about = "about_image.png"
             const val portfolio1 = "portfolio1.png"
             const val portfolio2 = "portfolio2.png"
