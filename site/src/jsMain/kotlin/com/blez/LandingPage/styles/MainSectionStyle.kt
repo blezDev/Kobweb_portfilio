@@ -56,11 +56,11 @@ val SocialLinkStyle by ComponentStyle {
 
 val MainButtonStyle by ComponentStyle {
     base {
-        Modifier.width(140.px)
+        Modifier.width(150.px)
             .transition(CSSTransition(property = "width", duration = 200.ms))
     }
     hover{
-        Modifier.width(160.px)
+        Modifier.width(170.px)
     }
 }
 @OptIn(ExperimentalComposeWebApi::class)

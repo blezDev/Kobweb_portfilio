@@ -45,6 +45,16 @@ object Constants {
             const val avatar4 = "avatar4.png"
             const val avatar5 = "avatar5.png"
             const val avatar6 = "avatar6.png"
+            const val avyakt = "avyakt.png"
+            const val doodlekong = "doodle_image.png"
+            const val iBeacon = "ibeacon.png"
+            const val shopping = "shopping.png"
+            const val bleach = "bleach.jpg"
+            const val naruto = "naruto.png"
+            const val google = "google.png"
+            const val smart_internz = "smart_internz.png"
+            const val google_club = "google_club.png"
+            const val verzeo = "verzeo.png"
         }
     }
 }

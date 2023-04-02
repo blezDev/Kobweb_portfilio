@@ -27,14 +27,14 @@ enum class Sections(
     Projects(
         id = "projects",
         title = "Projects",
-        subtitle = "I'm Have Worked at",
+        subtitle = "Recent Projects I've Worked on",
         path = "#projects"
     ),
 
     Experience(
         id = "experience",
         title = "Experience",
-        subtitle = "Work Experience",
+        subtitle = "My Experience",
         path = "#experience"
     ),
     Contact(

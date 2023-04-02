@@ -1,10 +1,7 @@
 package com.blez.LandingPage.pages
 
 import androidx.compose.runtime.*
-import com.blez.LandingPage.sections.AboutSection
-import com.blez.LandingPage.sections.MainBackground
-import com.blez.LandingPage.sections.MainSection
-import com.blez.LandingPage.sections.SkillsSection
+import com.blez.LandingPage.sections.*
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
@@ -25,6 +22,10 @@ fun HomePage() {
         MainSection()
         AboutSection()
         SkillsSection()
+        ProjectSection()
+        ExperienceSection()
+        ContactSection()
+        FooterSection()
 
     }
 }
