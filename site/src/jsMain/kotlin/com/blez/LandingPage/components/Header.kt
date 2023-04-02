@@ -52,7 +52,7 @@ fun LeftSide(breakpoint: Breakpoint) {
         FaBars(
             modifier = Modifier.margin(right = 15.px), size = IconSize.XL
         )
-        Image(modifier = LogoStyle.toModifier(),src = Constants.Res.Image.logo, desc = "Logo Image")
+        Image(modifier = LogoStyle.toModifier(),src = Constants.Res.Image.developer_logo, desc = "Logo Image")
     }
 }
 

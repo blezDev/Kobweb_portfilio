@@ -40,6 +40,7 @@ fun AboutSection() {
 
     Box(
         modifier = Modifier
+            .id(Sections.About.id)
             .maxWidth(Constants.SECTION_WIDTH.px)
             .padding(topBottom = 150.px),
         contentAlignment = Alignment.Center

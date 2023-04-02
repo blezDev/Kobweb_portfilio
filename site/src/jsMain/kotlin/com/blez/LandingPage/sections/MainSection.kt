@@ -39,7 +39,9 @@ import org.jetbrains.compose.web.dom.Text
 @Composable
 fun MainSection() {
 
-    Box(modifier = Modifier.maxWidth(SECTION_WIDTH.px), contentAlignment = Alignment.TopCenter) {
+    Box(modifier = Modifier
+        .id(Sections.Home.id)
+        .maxWidth(SECTION_WIDTH.px), contentAlignment = Alignment.TopCenter) {
         MainBackground()
         MainContent()
 

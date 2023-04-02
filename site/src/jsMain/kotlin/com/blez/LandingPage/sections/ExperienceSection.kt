@@ -11,10 +11,7 @@ import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
-import com.varabyte.kobweb.compose.ui.modifiers.margin
-import com.varabyte.kobweb.compose.ui.modifiers.maxWidth
-import com.varabyte.kobweb.compose.ui.modifiers.padding
+import com.varabyte.kobweb.compose.ui.modifiers.*
 import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
 import com.varabyte.kobweb.silk.theme.breakpoint.rememberBreakpoint
 import org.jetbrains.compose.web.css.percent
@@ -24,6 +21,7 @@ import org.jetbrains.compose.web.css.px
 fun ExperienceSection() {
     Box(
         modifier = Modifier
+            .id(Sections.Experience.id)
             .maxWidth(Constants.SECTION_WIDTH.px)
             .padding(topBottom = 150.px),
         contentAlignment = Alignment.Center
@@ -38,6 +36,7 @@ fun ExperienceContent() {
     val breakpoint by rememberBreakpoint()
     Column(
         modifier = Modifier
+
             .fillMaxWidth(if (breakpoint >= Breakpoint.MD) 100.percent else 90.percent)
             .maxWidth(1200.px), horizontalAlignment = Alignment.CenterHorizontally
     ) {

@@ -30,6 +30,7 @@ object Constants {
         object Image {
             const val background = "background.svg"
             const val logo = "logo.svg"
+            const val developer_logo = "logo_developer.svg"
             const val about_image = "about_image.jpg"
             const val main = "main_image.png"
             const val android_image = "android_image.png"

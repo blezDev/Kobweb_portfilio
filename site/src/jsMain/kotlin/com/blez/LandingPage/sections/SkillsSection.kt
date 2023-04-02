@@ -28,6 +28,7 @@ import org.jetbrains.compose.web.css.px
 fun SkillsSection(){
     Box(
         modifier = Modifier
+            .id(Sections.Skills.id)
             .maxWidth(Constants.SECTION_WIDTH.px)
             .padding(topBottom = 120.px),
         contentAlignment = Alignment.Center
