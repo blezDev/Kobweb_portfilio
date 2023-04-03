@@ -28,16 +28,16 @@ import org.jetbrains.compose.web.css.px
 
 
 @Composable
-fun Header() {
+fun Header(onMenuClicked: () -> Unit) {
     val breakpoint by rememberBreakpoint()
     Row(
-        modifier = Modifier.fillMaxWidth(if (breakpoint > Breakpoint.MD)80.percent else 90.percent)
+        modifier = Modifier.fillMaxWidth(if (breakpoint > Breakpoint.MD) 80.percent else 90.percent)
             .margin(topBottom = 50.px),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        LeftSide(breakpoint)
-        if (breakpoint > Breakpoint.MD){
+        LeftSide(breakpoint,onMenuClicked)
+        if (breakpoint > Breakpoint.MD) {
             RightSide()
         }
 
@@ -46,13 +46,19 @@ fun Header() {
 
 
 @Composable
-fun LeftSide(breakpoint: Breakpoint) {
+fun LeftSide(
+    breakpoint: Breakpoint,
+    onMenuClicked: () -> Unit
+) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         if (breakpoint <= Breakpoint.MD)
-        FaBars(
-            modifier = Modifier.margin(right = 15.px), size = IconSize.XL
-        )
-        Image(modifier = LogoStyle.toModifier(),src = Constants.Res.Image.developer_logo, desc = "Logo Image")
+            FaBars(
+                modifier = Modifier.margin(right = 15.px)
+                    .onClick {
+                        onMenuClicked()
+                    }, size = IconSize.XL
+            )
+        Image(modifier = LogoStyle.toModifier(), src = Constants.Res.Image.developer_logo, desc = "Logo Image")
     }
 }
 

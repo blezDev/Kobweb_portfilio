@@ -20,7 +20,7 @@ enum class Projects(val title: String,val img: String, val link: String) {
         "https://play.google.com/store/apps/details?id=com.gietu2.avyakt2o"
     ),
     BeaconTransmitter(
-        "Beacon Transmitter",
+        "iBeacon Transmitter",
         Constants.Res.Image.iBeacon,
         "https://github.com/blezDev/BeaconTransmitter"
     ),

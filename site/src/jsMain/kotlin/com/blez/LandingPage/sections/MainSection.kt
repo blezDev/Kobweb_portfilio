@@ -37,13 +37,13 @@ import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Text
 
 @Composable
-fun MainSection() {
+fun MainSection(onMenuClicked: () -> Unit) {
 
     Box(modifier = Modifier
         .id(Sections.Home.id)
         .maxWidth(SECTION_WIDTH.px), contentAlignment = Alignment.TopCenter) {
         MainBackground()
-        MainContent()
+        MainContent(onMenuClicked = onMenuClicked)
 
     }
 }
@@ -57,14 +57,14 @@ fun MainBackground() {
 }
 
 @Composable
-fun MainContent() {
+fun MainContent(onMenuClicked: () -> Unit) {
     val breakpoint by rememberBreakpoint()
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Header()
+        Header(onMenuClicked)
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
@@ -76,6 +76,7 @@ fun MainContent() {
                 ), numColumns = numColumns(base = 1, md = 2)
             ) {
                 MainText(breakpoint)
+                MainImage()
 
             }
         }
@@ -152,7 +153,7 @@ fun MainText(breakpoint: Breakpoint) {
                     modifier = Modifier
                         .color(Colors.White)
                         .textDecorationLine(TextDecorationLine.None),
-                    text = "Connect With Me",
+                    text = "Get in Touch",
                     path = Sections.Contact.path
                 )
             }
@@ -163,5 +164,14 @@ fun MainText(breakpoint: Breakpoint) {
 
 @Composable
 fun MainImage() {
-    Image(modifier = MainImageStyle.toModifier().fillMaxSize(80.percent), src = "", desc = "Main Image")
+    Column(
+        modifier = Modifier.fillMaxSize(80.percent).fillMaxHeight(),
+        verticalArrangement = Arrangement.Bottom
+    ) {
+        Image(
+            modifier = MainImageStyle.toModifier().fillMaxWidth(),
+            src = Res.Image.main,
+            desc = "Main Image"
+        )
+    }
 }
