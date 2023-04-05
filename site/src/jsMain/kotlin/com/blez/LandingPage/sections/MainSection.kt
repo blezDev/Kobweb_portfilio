@@ -76,7 +76,10 @@ fun MainContent(onMenuClicked: () -> Unit) {
                 ), numColumns = numColumns(base = 1, md = 2)
             ) {
                 MainText(breakpoint)
-                MainImage()
+                if (breakpoint > Breakpoint.MD) {
+                    MainImage()
+                }
+
 
             }
         }
@@ -165,12 +168,12 @@ fun MainText(breakpoint: Breakpoint) {
 @Composable
 fun MainImage() {
     Column(
-        modifier = Modifier.fillMaxSize(80.percent).fillMaxHeight(),
+        modifier = Modifier.fillMaxSize().fillMaxHeight(),
         verticalArrangement = Arrangement.Bottom
     ) {
         Image(
-            modifier = MainImageStyle.toModifier().fillMaxWidth(),
-            src = Res.Image.main,
+            modifier = Modifier.fillMaxWidth().objectFit(ObjectFit.Contain),
+            src = Res.Image.main3,
             desc = "Main Image"
         )
     }
