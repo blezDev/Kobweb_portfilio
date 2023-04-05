@@ -1,6 +1,7 @@
 site:
+  routePrefix: "MSaiP.github.io"
   title: "M Saikrishna Pattnaik"
-  routePrefix:"MSaiP.github.io"
+
 
 server:
   files:
@@ -10,6 +11,6 @@ server:
       api: "build/libs/LandingPage.jar"
     prod:
       script: "build/distributions/LandingPage.js"
-      siteRoot: ".kobweb/site"
+      siteRoot: ".kobweb/site/docs"
 
   port: 8080
