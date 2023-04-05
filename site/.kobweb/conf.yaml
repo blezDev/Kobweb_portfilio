@@ -11,6 +11,6 @@ server:
       api: "build/libs/LandingPage.jar"
     prod:
       script: "build/distributions/LandingPage.js"
-      siteRoot: ".kobweb/site/docs"
+      siteRoot: ".kobweb/site"
 
   port: 8080
