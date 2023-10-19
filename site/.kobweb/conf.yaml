@@ -5,6 +5,11 @@ site:
 
 server:
   files:
+    cors:
+      hosts:
+        - name: "msaikrishnapatnaik.up.railway.app"
+          schemes:
+            - "https"
     dev:
       contentRoot: "build/processedResources/js/main/public"
       script: "build/developmentExecutable/LandingPage.js"
