@@ -49,7 +49,7 @@ fun ExperienceContent() {
             ExperienceCard(
                 breakpoint = breakpoint,
                 experience = experience,
-                active = experience.name == Experience.Android_Lead.name
+                active = experience.name == Experience.BlankCanvas.name
 
             )
 

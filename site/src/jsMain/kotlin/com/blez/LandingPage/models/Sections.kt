@@ -54,5 +54,12 @@ enum class Sections(
         title = "Achievements",
         subtitle = "Personal Achievements",
         path = "#achievements"
+    ),
+    Bond(
+        id = "Bond",
+        title = "Featured",
+        subtitle = "Memories",
+        path = "#Featured"
+
     )
 }

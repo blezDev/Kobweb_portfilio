@@ -29,6 +29,7 @@ fun HomePage() {
             SkillsSection()
             ProjectSection()
             ExperienceSection()
+            BondSection()
             ContactSection()
             FooterSection()
 

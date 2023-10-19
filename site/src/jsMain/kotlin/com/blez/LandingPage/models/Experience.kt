@@ -28,9 +28,24 @@ enum class Experience(
         "03",
         "Android Lead at Google Developer Student Club GIETU",
         "August 2022",
-        "Present",
+        "June 2023",
         Constants.Res.Image.google_club
+    ),
+    PetukJi(
+        "04",
+        "Android Developer Intern at Petuk Ji Pvt Ltd",
+        "June 2023",
+        "September 2023",
+        Constants.Res.Image.petukji
+    ),
+    BlankCanvas(
+        "05",
+        "Android Developer Intern at Blank Canvas Design Co.",
+        "September 2023",
+        "Present",
+        Constants.Res.Image.blankCanvas
     )
+
 
 
 }

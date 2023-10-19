@@ -2,6 +2,8 @@ package com.blez.LandingPage.styles
 
 import com.varabyte.kobweb.compose.css.CSSTransition
 import com.varabyte.kobweb.compose.css.TransitionProperty
+import com.varabyte.kobweb.compose.css.resize
+import com.varabyte.kobweb.compose.css.scale
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.*
 import com.varabyte.kobweb.compose.ui.styleModifier
@@ -40,6 +42,37 @@ val AboutImageStyle by ComponentStyle {
 
     }
 }
+
+
+@OptIn(ExperimentalComposeWebApi::class)
+val ZoomImageStyle by ComponentStyle{
+    base {
+        Modifier
+            .styleModifier {
+
+            }
+            .borderRadius(
+                r = 0.px
+            )
+            .rotate(0.deg)
+            .transition(CSSTransition(property = TransitionProperty.All, duration = 200.ms))
+    }
+    hover{
+        Modifier
+            .styleModifier {
+                filter {
+                  scale(1.2)
+                }
+
+            }
+            .borderRadius(
+                r = 0.px
+            )
+
+    }
+}
+
+
 val AboutTextStyle by ComponentStyle {
     base {
         Modifier.opacity(50.percent)

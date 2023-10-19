@@ -55,10 +55,16 @@ object Constants {
             const val shopping = "shopping.png"
             const val bleach = "bleach.jpg"
             const val naruto = "naruto.png"
+            const val anistream = "ic_icon.png"
             const val google = "google.png"
             const val smart_internz = "smart_internz.png"
             const val google_club = "google_club.png"
             const val verzeo = "verzeo.png"
+            const val petukji = "petukji.jpeg"
+            const val blankCanvas = "blank.jpeg"
+            const val gietu = "gietu.webp"
+            const val heart = "heart.jpeg"
+            const val meme = "meme.jpeg"
         }
     }
 }
