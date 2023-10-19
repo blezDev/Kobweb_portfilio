@@ -1,6 +1,7 @@
 site:
 
   title: "M Saikrishna Pattnaik"
+  routePrefix: "Kobweb_portfilio"
 
 
 server:
@@ -11,6 +12,6 @@ server:
       api: "build/libs/LandingPage.jar"
     prod:
       script: "build/distributions/LandingPage.js"
-      siteRoot: ".kobweb/site"
+      siteRoot: "../docs"
 
   port: 8080
