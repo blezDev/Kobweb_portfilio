@@ -7,6 +7,7 @@ import com.blez.LandingPage.models.Sections
 import com.blez.LandingPage.styles.AboutImageStyle
 import com.blez.LandingPage.styles.ZoomImageStyle
 import com.blez.LandingPage.util.Constants
+import com.varabyte.kobweb.compose.css.functions.RadialGradient
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -20,6 +21,7 @@ import com.varabyte.kobweb.silk.components.layout.numColumns
 import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
 import com.varabyte.kobweb.silk.components.style.toModifier
 import com.varabyte.kobweb.silk.theme.breakpoint.rememberBreakpoint
+import com.varabyte.kobweb.silk.theme.shapes.clip
 import org.jetbrains.compose.web.css.AlignContent
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
@@ -83,20 +85,31 @@ fun GroupImage(orientation : Orientation){
         if (orientation ==Orientation.HORIZONTAL){
          Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
              Image(
-                 modifier = ZoomImageStyle.toModifier().size(25.percent),
-                 src = Constants.Res.Image.about_image, desc = "Profile Photo"
+                 modifier = ZoomImageStyle.toModifier().size(60.percent).height(65.percent),
+                 src = Constants.Res.Image.pic2, desc = "Profile Photo"
              )
+
              Image(
-                 modifier = ZoomImageStyle.toModifier().size(25.percent),
-                 src = Constants.Res.Image.about_image, desc = "Profile Photo"
-             )
-             Image(
-                 modifier = ZoomImageStyle.toModifier().size(25.percent),
-                 src = Constants.Res.Image.about_image, desc = "Profile Photo"
+                 modifier = ZoomImageStyle.toModifier().size(35.percent),
+                 src = Constants.Res.Image.pic1, desc = "Profile Photo"
              )
          }
         }else{
+            Column(modifier = Modifier.fillMaxWidth(), verticalArrangement = Arrangement.Center) {
 
+                Image(
+                    modifier = ZoomImageStyle.toModifier().size(25.percent),
+                    src = Constants.Res.Image.pic2, desc = "Profile Photo"
+                )
+                Image(
+                    modifier = ZoomImageStyle.toModifier().size(25.percent),
+                    src = Constants.Res.Image.about_image, desc = "Profile Photo"
+                )
+                Image(
+                    modifier = ZoomImageStyle.toModifier().size(25.percent),
+                    src = Constants.Res.Image.pic1, desc = "Profile Photo"
+                )
+            }
         }
     }
 }

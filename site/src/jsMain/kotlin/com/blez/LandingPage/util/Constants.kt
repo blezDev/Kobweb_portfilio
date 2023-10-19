@@ -65,6 +65,8 @@ object Constants {
             const val gietu = "gietu.webp"
             const val heart = "heart.jpeg"
             const val meme = "meme.jpeg"
+            const val pic1 = "pic1.jpg"
+            const val pic2 = "pic2.jpg"
         }
     }
 }
