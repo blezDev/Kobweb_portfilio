@@ -74,6 +74,7 @@ fun BondContent(){
             GroupImage(Orientation.HORIZONTAL)
         }else{
             GroupImage(Orientation.VERTICAL)
+
         }
     }
 }
