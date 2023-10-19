@@ -196,7 +196,7 @@ fun AboutMe() {
                         .color(Colors.White)
                         .textDecorationLine(TextDecorationLine.None),
                     text = "Resume",
-                    path = "https://drive.google.com/file/d/1AgxC9fBMpoA7qSUEh4d5HdaUZHUY19nb/view?usp=share_link"
+                    path = "https://media.licdn.com/dms/document/media/D561FAQGTjx04KDH0fg/feedshare-document-pdf-analyzed/0/1696504657870?e=1698883200&v=beta&t=GbA3nBxIcnCKrFxm_bkVCWNKzj8OMxFrKJmqBBmQGGI"
                 )
             }
         }
